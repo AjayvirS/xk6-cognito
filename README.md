@@ -13,7 +13,7 @@ See:
 
 ``` sh
 go install go.k6.io/xk6/cmd/xk6@latest
-xk6 build master   --with github.com/tmieulet/xk6-cognito
+xk6 build master --with github.com/AjayvirS/xk6-cognito
 
 ./k6 run --vus 1 --duration 2s /scripts/examples/loadTest.js
 
@@ -23,7 +23,7 @@ xk6 build master   --with github.com/tmieulet/xk6-cognito
 
 
 ``` sh
-git clone https://github.com/tmieulet/xk6-cognito.git && cd xk6-cognito
+git clone https://github.com/AjayvirS/xk6-cognito.git && cd xk6-cognito
 docker run --rm -v $(pwd):/scripts -it --entrypoint sh golang:1.17-alpine
 
 cd /scripts/
